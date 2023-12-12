@@ -20,7 +20,7 @@ plan_terraform:
   stage: build
   script:
     - terraform init
-    - terraform plan -out=aws_test.plan
+    - terraform plan -out=build.plan
   needs:
     - "validate_terraform"
   artifacts:
